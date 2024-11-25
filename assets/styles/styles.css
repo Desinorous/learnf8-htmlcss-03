@@ -34,22 +34,31 @@ a{
 }
 
 .btn{
-    width: 104px;
-    height: 44px;
-    border-radius: 22px;
+    display: inline-block;
+    min-width: 205px;
+    height: 60px;
+    border-radius: 999px;
     background: var(--primary-color);
     color: #FFF;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.75; /* 175% */
+    line-height: 1.75;
+    padding: 0 20px;
 }
 
 /* =========================================== Header =============================================== */
 .header{
     min-height: 100vh;
     background-color: #10375C;
+    padding-top: 30px;
+}
+
+.header__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
@@ -98,4 +107,65 @@ a{
 .logo__brand--small{
     font-size: 1.2em;
     font-weight: 300;
+}
+
+/* Navbar */
+
+.navbar__list{
+    display: flex;
+}
+
+.navbar__link{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 4px 21px;
+}
+
+
+.navbar__link--action{
+    font-weight: 400;
+    color: #FFF;
+}
+
+.navbar__link--action::before{
+    position: absolute;
+    left: 9px;
+    align-items: center;
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.navbar__link:hover{
+    color: #fff;
+    text-shadow: 1px 0 0  currentColor;
+}
+
+/* Button Log in */
+.action{
+    display: flex;
+    gap: 8px;
+}
+
+
+.action__btn{
+    min-width: 104px;
+    height: 44px;
+    padding: 8px 0;
+    background: none;
+    color: #C9D2DA;
+    font-size: 1.6rem;
+}
+
+.action__btn:hover{
+    background-color: #2E80CE;
+    color: #FFF;
+    font-weight: 600;
 }
