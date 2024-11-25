@@ -44,7 +44,7 @@ a{
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 60px;
     padding: 0 20px;
 }
 
@@ -149,23 +149,95 @@ a{
 }
 
 /* Button Log in */
-.action{
+.header-action{
     display: flex;
-    gap: 8px;
 }
 
 
-.action__btn{
+.header-action__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 104px;
     height: 44px;
-    padding: 8px 0;
     background: none;
     color: #C9D2DA;
     font-size: 1.6rem;
 }
 
-.action__btn:hover{
+.header-action__btn:hover{
     background-color: #2E80CE;
     color: #FFF;
     font-weight: 600;
+}
+
+
+/* hero */
+.hero{
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.hero__content{
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading{
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.hero__desc{
+    margin-top: 22px;
+    color: #C9D2DA;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.hero__row{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.hero__hotline{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero__media{
+    flex-grow: 1;
+}
+
+.hero__image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img{
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img:first-child{
+    position: relative;
+    left: 6px;
+}
+
+.hero__img:last-of-type{
+    width: 210px;
+    height: 410px;
 }
