@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #2E80CE;
+    --font-heading1: "Sora";
+}
+
+html,body{
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Sora", serif;
+}
+
+/* ======================================== Common ================================================ */
+.content{
+    width: 1170px;
+}
+
+.btn{
+    width: 104px;
+    height: 44px;
+    border-radius: 22px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
