@@ -23,8 +23,14 @@ body{
 }
 
 /* ======================================== Common ================================================ */
-.content{
+a{
+    text-decoration: none;
+}
+
+.container{
     width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
 }
 
 .btn{
@@ -38,4 +44,58 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 1.75; /* 175% */
+}
+
+/* =========================================== Header =============================================== */
+.header{
+    min-height: 100vh;
+    background-color: #10375C;
+}
+
+.logo{
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+}
+
+.logo__circle::before,
+.logo__circle::after{
+    display: inline-block;
+    background-color: #2E80CE;
+    content: "";
+    border-radius: 50%;
+}
+
+.logo__circle::before{
+    width: 3em;
+    height: 3em;
+
+}
+
+.logo__circle::after{
+    position: absolute;
+    left: 1.1em;
+    top: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: #FFF;
+}
+
+.logo__text{
+    color: #FFF;
+    margin-left: 0.6em;
+    line-height: 1.6em;
+    text-align: right;
+}
+
+.logo__brand{
+    display: block;
+    color: #FFF;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small{
+    font-size: 1.2em;
+    font-weight: 300;
 }
