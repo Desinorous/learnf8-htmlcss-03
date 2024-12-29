@@ -1,45 +1,45 @@
-*{
+* {
     box-sizing: border-box;
-
 }
 
-:root{
-    --primary-color: #2E80CE;
-    --font-heading1: "Sora";
+:root {
+    --primary-color: #2e80ce;
+    --font-heading1: 'Sora';
 }
 
-html,body{
+html,
+body {
     scroll-behavior: smooth;
     --webkit-scroll-behavior: smooth;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
-    font-family: "Sora", serif;
+    font-family: 'Sora', serif;
 }
 
 /* ======================================== Common ================================================ */
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     display: inline-block;
     min-width: 205px;
     height: 60px;
     border-radius: 999px;
     background: var(--primary-color);
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 1.8rem;
     font-style: normal;
@@ -48,259 +48,253 @@ a{
     padding: 0 20px;
 }
 
-.section-heading{
-    color: #10375C;
+.section-heading {
+    color: #10375c;
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -1px;
 }
 
-.section-desc{
+.section-desc {
     margin-top: 18px;
-    color: #575F66;
+    color: #575f66;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67;
 }
 
 /* =========================================== Header =============================================== */
-.header{
+.header {
     min-height: 100vh;
-    background-color: #10375C;
+    background-color: #10375c;
     padding-top: 30px;
 }
 
-.header__top{
+.header__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     display: inline-flex;
     position: relative;
     font-size: 1rem;
 }
 
 .logo__circle::before,
-.logo__circle::after{
+.logo__circle::after {
     display: inline-block;
-    background-color: #2E80CE;
-    content: "";
+    background-color: #2e80ce;
+    content: '';
     border-radius: 50%;
 }
 
-.logo__circle::before{
+.logo__circle::before {
     width: 3em;
     height: 3em;
-
 }
 
-.logo__circle::after{
+.logo__circle::after {
     position: absolute;
     left: 1.1em;
     top: 1.1em;
     width: 1.6em;
     height: 1.6em;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
-.logo__text{
-    color: #FFF;
+.logo__text {
+    color: #fff;
     margin-left: 0.6em;
     line-height: 1.6em;
     text-align: right;
 }
 
-.logo__brand{
+.logo__brand {
     display: block;
-    color: #FFF;
+    color: #fff;
     font-size: 1.8em;
     font-weight: 400;
 }
 
-.logo__brand--small{
+.logo__brand--small {
     font-size: 1.2em;
     font-weight: 300;
 }
 
 /* Navbar */
 
-.navbar__list{
+.navbar__list {
     display: flex;
 }
 
-.navbar__link{
+.navbar__link {
     position: relative;
     display: inline-flex;
     align-items: center;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-size: 1.6rem;
     font-weight: 300;
     padding: 4px 21px;
 }
 
-
-.navbar__link--action{
+.navbar__link--action {
     font-weight: 400;
-    color: #FFF;
+    color: #fff;
 }
 
-.navbar__link--action::before{
+.navbar__link--action::before {
     position: absolute;
     left: 9px;
     align-items: center;
-    content: "";
+    content: '';
     width: 6px;
     height: 6px;
     display: inline-block;
     border-radius: 50%;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
-.navbar__link:hover{
+.navbar__link:hover {
     color: #fff;
-    text-shadow: 1px 0 0  currentColor;
+    text-shadow: 1px 0 0 currentColor;
 }
 
 /* Button Log in */
-.header-action{
+.header-action {
     display: flex;
 }
 
-
-.header-action__btn{
+.header-action__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 104px;
     height: 44px;
     background: none;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-size: 1.6rem;
 }
 
-.header-action__btn:hover{
-    background-color: #2E80CE;
-    color: #FFF;
+.header-action__btn:hover {
+    background-color: #2e80ce;
+    color: #fff;
     font-weight: 600;
 }
 
-
 /* hero */
-.hero{
+.hero {
     display: flex;
     align-items: center;
     margin-top: 76px;
 }
 
-.hero__content{
+.hero__content {
     flex-shrink: 0;
     width: 44%;
 }
 
-.hero__heading{
-    color: #FFF;
+.hero__heading {
+    color: #fff;
     font-size: 7rem;
     font-weight: 600;
     line-height: 1.14;
     letter-spacing: -0.02em;
 }
 
-.hero__desc{
+.hero__desc {
     margin-top: 22px;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.66;
 }
 
-.hero__row{
+.hero__row {
     margin-top: 38px;
     display: flex;
     align-items: center;
     gap: 38px;
 }
 
-.hero__hotline{
-    color: #FFF;
+.hero__hotline {
+    color: #fff;
     text-align: center;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
 }
 
-.hero__media{
+.hero__media {
     flex-grow: 1;
 }
 
-.hero__image{
+.hero__image {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.hero__img{
+.hero__img {
     width: 330px;
     height: 540px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.hero__img:first-child{
+.hero__img:first-child {
     position: relative;
     left: 6px;
 }
 
-.hero__img:last-of-type{
+.hero__img:last-of-type {
     width: 210px;
     height: 410px;
 }
 
-
 /* ================================================ Service ====================================================== */
-.service{
+.service {
     padding: 170px 0;
 }
 
 .service__heading,
-.service__desc{
+.service__desc {
     text-align: center;
 }
 
-.service__desc{
+.service__desc {
     max-width: 468px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.service__row{
+.service__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 70px;
 }
 
-.service-item{
+.service-item {
     display: flex;
     gap: 19px;
     padding: 22px;
     width: 470px;
     border-radius: 10px;
-    background: #FFF;
+    background: #fff;
     transition: 0.25s;
 }
 
-
-.service__img{
+.service__img {
     width: 570px;
     height: 570px;
     border-radius: 12px;
     object-fit: cover;
 }
 
-.service-item__icon{
+.service-item__icon {
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -314,35 +308,246 @@ a{
     transition: 0.25s;
 }
 
-.service-item:hover .service-item__icon{
-    background-color: #2E80CE;
-    color: #FFFFFF;
+.service-item:hover .service-item__icon {
+    background-color: #2e80ce;
+    color: #ffffff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
 }
 
-.service-item__title{
-    color: #10375C;
+.service-item__title {
+    color: #10375c;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.service-item__desc{
+.service-item__desc {
     margin-top: 8px;
-    color: #575F66;
+    color: #575f66;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
 }
 
-.service__btn--action{
+.service__btn--action {
     margin-top: 55px;
 }
 
-.service-item:hover{
+.service-item:hover {
     position: relative;
     border-radius: 10px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 
+/* ===================================================== Work ================================================================ */
+.work {
+    background: #f6fbff;
+    padding: 100px 0;
+}
 
+.work__desc {
+    max-width: 468px;
+}
+
+.work__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 86px;
+    column-gap: 30px;
+}
+
+.work-item {
+    padding: 44px;
+    border-radius: 4px;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.work-item__title {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+    max-width: 254px;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.work-item:hover {
+    transform: translateY(-16px);
+    border: 16px solid #2e80ce;
+}
+
+.work-item:hover .work-item__more {
+    color: #2e80ce;
+}
+
+/* =========================================== Feature ======================================================= */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__body {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature-img {
+    position: relative;
+    padding-bottom: 121px;
+    padding-right: 58px;
+}
+
+.feature-images {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature-images:last-child {
+    position: absolute;
+    width: 332px;
+    height: 370px;
+    right: 0;
+    bottom: 0;
+}
+
+.feature__btn {
+    display: inline-block;
+    margin-top: 58px;
+}
+
+/* =================================================== Dentist ========================================================= */
+.dentist {
+    padding: 85px 0;
+}
+
+.dentist__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dentist__btn {
+    margin-top: 38px;
+}
+
+.dentist__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+
+.dentist-member__img {
+    width: 262px;
+    height: 290px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.dentist-member__name {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.dentist-member__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.dentist-move {
+    margin-top: 38px;
+    display: flex;
+    gap: 20px;
+}
+
+.dentist-move__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #575f66;
+    color: #575f66;
+}
+
+.dentist-move__btn:hover {
+    background-color: #2e80ce;
+    color: #ffffff;
+}
+
+/* =========================================================== Install =========================================================== */
+.install{
+    padding: 170px 0 85px 0;
+}
+.install__body{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #2E80CE;
+    padding: 75px 0;
+    border-radius: 4px;
+}
+
+.install-app{
+    margin-right: 70px;
+}
+
+.install__phone{
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+}
+
+.install__heading{
+    width: 489px;
+    color: #fff;
+}
+
+.install__desc{
+    color: #fff;
+    width: 586px;
+}
+
+.install-app__location{
+    display: flex;
+    gap: 28px;
+    margin-top: 38px;
+}
+
+.install-app__download{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
