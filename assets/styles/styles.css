@@ -505,77 +505,75 @@ a {
     line-height: 1.85; /* 185.714% */
 }
 
-.dentist__chevron{
+.dentist__chevron {
     margin-top: 38px;
 }
 
-
-
 /* =========================================================== Install =========================================================== */
-.install{
+.install {
     padding: 170px 0 85px 0;
 }
-.install__body{
+.install__body {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    background-color: #2E80CE;
+    background-color: #2e80ce;
     padding: 75px 0;
     border-radius: 4px;
 }
 
-.install-app{
+.install-app {
     margin-right: 70px;
 }
 
-.install__phone{
+.install__phone {
     position: absolute;
     left: 70px;
     bottom: 0;
 }
 
-.install__heading{
+.install__heading {
     width: 489px;
     color: #fff;
 }
 
-.install__desc{
+.install__desc {
     color: #fff;
     width: 586px;
 }
 
-.install-app__location{
+.install-app__location {
     display: flex;
     gap: 28px;
     margin-top: 38px;
 }
 
-.install-app__download{
+.install-app__download {
     background: none;
     border: none;
     cursor: pointer;
 }
 
 /* ====================================================News ============================================================== */
-.news{
+.news {
     /* background-color: orange; */
     padding: 85px 0;
 }
 
-.news__body{
+.news__body {
     display: flex;
     justify-content: space-between;
 }
 
-.news__heading{
+.news__heading {
     width: 470px;
 }
 
-.news__blog{
+.news__blog {
     display: inline-block;
     margin: 28px 0;
-    color: #10375C;
+    color: #10375c;
     font-family: Inter;
     font-size: 1.8rem;
     font-weight: 600;
@@ -588,78 +586,78 @@ a {
     text-underline-position: from-font;
 }
 
-.news-right{
+.news-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 46%;
     column-gap: 30px;
 }
 
-.news-right__infor{
+.news-right__infor {
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #E8EBEE;
-    background: #FFF;
+    border: 1px solid #e8ebee;
+    background: #fff;
 }
 
-.news-right__infor:hover{
+.news-right__infor:hover {
     border-radius: 12px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
-.news-right__infor:hover .news-right__more{
-    color: #2E80CE;
+.news-right__infor:hover .news-right__more {
+    color: #2e80ce;
 }
 
-.news-infor__below{
+.news-infor__below {
     padding: 18px 0 21px 22px;
 }
 
-.news-right__img{
+.news-right__img {
     width: 100%;
     height: 172px;
     border-radius: 8px 8px 0 0;
 }
 
-.news-right__title{
-    color: #10375C;
+.news-right__title {
+    color: #10375c;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.62; /* 162.5% */
 }
 
-.news-right__desc{
+.news-right__desc {
     margin-top: 10px;
-    color: #575F66;
+    color: #575f66;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.71; /* 171.429% */
 }
 
-.news-right__more{
+.news-right__more {
     display: inline-block;
     margin-top: 12px;
-    color: #10375C;
+    color: #10375c;
     font-size: 1.4rem;
     font-weight: 400;
 }
 
 /* ================================================= Appointment ===================================================== */
-.appointment{
+.appointment {
     padding: 85px 0;
 }
 
-.appointment__body{
+.appointment__body {
     display: flex;
-    background: #F6FBFF;
+    background: #f6fbff;
     padding: 100px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.appointment__desc{
+.appointment__desc {
     margin-top: 38px;
     position: relative;
     width: 617px;
@@ -667,25 +665,117 @@ a {
     font-size: 1.6rem;
 }
 
-.appointment__desc::before{
+.appointment__desc::before {
     position: absolute;
     top: -18px;
     left: 50%;
-    content: "";
-    background:#2E80CE;
+    content: '';
+    background: #2e80ce;
     width: 136px;
     height: 2px;
     transform: translateX(-50%);
 }
 
-.appointment__call{
-    color: #575F66;
+.appointment__call {
+    color: #575f66;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75; /* 175% */
 }
 
-.appointment__btn{
+.appointment__btn {
     display: inline-block;
     margin-top: 38px;
+}
+
+/* =================================================== Footer ========================================================= */
+.footer {
+    background: #10375c;
+    margin: 85px 0 0 0;
+    padding-bottom: 28px;
+}
+
+.footer__body {
+    display: grid;
+    grid-template-columns: 2.19fr repeat(2, 1fr) 2fr;
+    padding: 100px 0 28px 0;
+    border-bottom:1px solid #406181 ;
+}
+
+.footer__desc {
+    width: 336px;
+    color: #a9b3bb;
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__support a,
+.footer__contact p {
+    display: inline-block;
+    margin-top: 20px;
+    color: #a9b3bb;
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer__support .footer__title:last-of-type,
+.footer__contact .footer__title:last-of-type{
+    margin-top: 28px;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__society{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer__sub {
+    width: 273px;
+}
+
+.footer__input {
+    width: 212px;
+    height: 40px;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    padding-left: 10px;
+    color: #fff;
+    margin:10px 12px 0 0;
+}
+
+.footer-sub__btn {
+    padding: 10px 21px;
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    background: #2e80ce;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer__copyright{
+    display: block;
+    margin-top: 28px;
+    color: #AAB3BA;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
 }
