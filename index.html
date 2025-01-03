@@ -81,13 +81,13 @@
                             <a href="" class="navbar__link navbar__link--action">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">Services</a>
+                            <a href="#services" class="navbar__link">Services</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">About</a>
+                            <a href="#about" class="navbar__link">About</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__link">Doctors</a>
+                            <a href="#doctors" class="navbar__link">Doctors</a>
                         </li>
                     </ul>
                 </nav>
@@ -107,7 +107,7 @@
 
                     <div class="hero__row">
                         <a href="#!" class="btn">Book Online</a>
-                        <span><a class="hero__hotline" href="#!" tel>or call (123) 456-7890</a></span>
+                        <span><a class="hero__hotline" href="tel:(123) 456-7890" tel>or call (123) 456-7890</a></span>
                     </div>
                 </section>
 
@@ -125,7 +125,7 @@
     <main>
         <!-- Service -->
         <section class="service">
-            <div class="container">
+            <div class="container" id="services">
                 <h2 class="service__heading section-heading">Our services</h2>
                 <p class="service__desc section-desc">Exceptional dental care for all ages. Your great smile begins with
                     a great dentist.</p>
@@ -238,7 +238,7 @@
         </section>
 
         <!-- Features -->
-        <section class="feature">
+        <section class="feature" id="about">
             <div class="container">
                 <div class="feature__body">
                     <div class="feature__media">
@@ -262,7 +262,7 @@
 
         <!-- Dentists -->
         <section class="dentist">
-            <div class="container">
+            <div class="container" id="doctors">
                 <div class="dentist__body">
                     <h2 class="section-heading">Our virtual dentist</h2>
                     <a href="" class="btn dentist__btn">Meet our dentist</a>
@@ -311,10 +311,11 @@
                         <p class="section-desc install__desc">If you’re missing multiple teeth due to decay, injury, or
                             the natural aging process, dentures might be the perfect solution.</p>
                         <div class="install-app__location">
-                            <button class="install__googleplay install-app__download"><img
-                                    src="./assets/img/Google Play outline badge.svg" alt=""></button>
-                            <button class="install__appstore install-app__download"><img
-                                    src="./assets/img/App Store outline badge.svg" alt=""></button>
+                            <a href="https://play.google.com/" class="install__googleplay install-app__download"><img
+                                    src="./assets/img/Google Play outline badge.svg" alt=""></a>
+                            <a href="https://www.apple.com/vn/app-store/"
+                                class="install__appstore install-app__download"><img
+                                    src="./assets/img/App Store outline badge.svg" alt=""></a>
                         </div>
                     </section>
                 </div>
@@ -442,7 +443,7 @@
                         </li>
                     </ul>
 
-                    <h4 class="footer__title" >Support</h4>
+                    <h4 class="footer__title">Support</h4>
                     <ul>
                         <li>
                             <a href="#!">Help center</a>
@@ -463,8 +464,8 @@
                     <p class="footer__sub">Subscribe our newsletter for the latest update of Dental care</p>
 
                     <label for="">
-                        <input type="text" class="footer__input" placeholder="Enter your email...">
-                        <a href="#!" class="footer-sub__btn">Subscribe</a>
+                        <input type="email" name="email" class="footer__input" placeholder="Enter your email...">
+                        <a href="#!" class="btn footer-sub__btn">Subscribe</a>
                     </label>
                 </section>
 
